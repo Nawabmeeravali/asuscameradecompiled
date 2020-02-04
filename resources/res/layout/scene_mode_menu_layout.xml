@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/blur" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/close_button" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/x" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <android.support.p000v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/page_indicator" android:layout_below="@+id/close_button"/>
+    <com.android.camera.p004ui.DotsView android:id="@+id/page_indicator" android:layout_width="80dp" android:layout_height="25dp" android:layout_margin="5dp" android:layout_above="@+id/setting_button" android:layout_centerHorizontal="true"/>
+    <com.android.camera.p004ui.RotateImageView android:id="@+id/setting_button" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp" android:src="@drawable/settings" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

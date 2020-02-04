@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selection">
+        <item quantity="one">चयन गरिएका आइटमलाई हटाउने हो?</item>
+        <item quantity="other">छानिएका आइटमहरू हटाउने हो?</item>
+    </plurals>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">१ सेकेन्ड</item>
+        <item quantity="other">%d सेकेण्ड</item>
+    </plurals>
+</resources>

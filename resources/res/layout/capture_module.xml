@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/selfie_flash_view"/>
+    <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.camera.p004ui.AutoFitSurfaceView android:layout_gravity="center" android:id="@+id/mdp_preview_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.android.camera.p004ui.AutoFitSurfaceView android:id="@+id/mdp_preview_content_mono" android:visibility="gone" android:layout_width="300dp" android:layout_height="300dp"/>
+    </FrameLayout>
+    <View android:id="@+id/preview_cover" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.camera.p004ui.Camera2FaceView android:id="@+id/face_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.android.camera.Camera2GraphView android:id="@+id/graph_view_r" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="10dp" android:layout_marginTop="70dp"/>
+        <com.android.camera.Camera2GraphView android:id="@+id/graph_view_gr" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="120dp" android:layout_marginTop="70dp"/>
+        <com.android.camera.Camera2GraphView android:id="@+id/graph_view_gb" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="230dp" android:layout_marginTop="70dp"/>
+        <com.android.camera.Camera2GraphView android:id="@+id/graph_view_b" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="10dp" android:layout_marginTop="180dp"/>
+    </FrameLayout>
+    <com.android.camera.p004ui.RenderOverlay android:id="@+id/render_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.camera.p004ui.RotateLayout android:id="@+id/recording_time_rect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginTop="80dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <include android:id="@+id/labels" layout="@layout/viewfinder_labels_video"/>
+        </com.android.camera.p004ui.RotateLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.camera.p004ui.RotateLayout android:layout_gravity="center_horizontal" android:id="@+id/bokeh_tip_rect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="12sp" android:textColor="@color/bokeh_text" android:id="@+id/bokeh_status" android:background="@drawable/bokeh_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.android.camera.p004ui.RotateLayout>
+    </FrameLayout>
+    <include layout="@layout/scene_mode_label"/>
+    <include android:layout_gravity="center" layout="@layout/one_ui_layout" style="@style/CameraControls"/>
+    <include android:layout_gravity="center" layout="@layout/menu_help" style="@style/CameraControls"/>
+    <FrameLayout android:id="@+id/preview_of_intent" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.camera.p004ui.RotateImageView android:id="@+id/preview_content" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/preview_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gallery_play_big"/>
+        <com.android.camera.p004ui.RotatableLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_marginBottom="2dp" style="@style/CameraControls">
+            <com.android.camera.p004ui.RotateImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/done_button" android:background="@drawable/bg_pressed" android:src="@drawable/ic_menu_done_holo_light" android:scaleType="center" android:contentDescription="@string/accessibility_review_ok" style="@style/ReviewControlIcon"/>
+            <com.android.camera.p004ui.RotateImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/preview_btn_retake" android:background="@drawable/bg_pressed" android:focusable="true" android:src="@drawable/ic_btn_shutter_retake" android:scaleType="center" android:contentDescription="@string/accessibility_review_retake" style="@style/ReviewControlIcon"/>
+            <com.android.camera.p004ui.RotateImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/preview_btn_cancel" android:background="@drawable/bg_pressed" android:src="@drawable/ic_menu_cancel_holo_light" android:scaleType="center" android:contentDescription="@string/accessibility_review_cancel" style="@style/ReviewControlIcon"/>
+        </com.android.camera.p004ui.RotatableLayout>
+    </FrameLayout>
+</merge>

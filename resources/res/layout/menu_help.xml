@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.MenuHelp xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/menu_help" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_gravity="bottom" android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.android.camera.p004ui.Arrows android:id="@+id/arrows" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/help_text_0_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuButton"/>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/help_text_1_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuButton"/>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/help_text_3_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuButton"/>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/help_text_4_6" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuButton"/>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/help_ok_2_4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuButton"/>
+</com.android.camera.p004ui.MenuHelp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.CountdownTimerPopup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/SettingPopupWindow">
+    <LinearLayout android:orientation="vertical" android:background="@color/popup_background" android:layout_width="@dimen/big_setting_popup_window_width" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/popup_title_frame_min_height" style="@style/PopupTitleText"/>
+        <View style="@style/PopupTitleSeparator"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/time_duration_picker" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:id="@+id/set_time_interval_title" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/set_duration"/>
+            <NumberPicker android:layout_gravity="center_horizontal" android:id="@+id/duration" android:focusable="false" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#40ffffff" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/timer_sound" style="@style/SettingRow">
+                <TextView android:id="@+id/beep_title" android:text="@string/pref_camera_timer_sound_title" style="@style/SettingItemTitle"/>
+                <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sound_check_box" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <View android:background="#40ffffff" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <Button android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@+id/timer_set_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/time_lapse_interval_set" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.android.camera.p004ui.CountdownTimerPopup>

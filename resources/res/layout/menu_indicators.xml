@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/on_screen_indicators" android:layout_width="64dp" android:layout_height="64dp">
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/menu_scenemode_indicator" android:src="@drawable/ic_indicator_sce_off" style="@style/MenuIndicator"/>
+    <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/menu_timer_indicator" android:src="@drawable/ic_indicator_timer_off" style="@style/MenuIndicator"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/menu_flash_indicator" android:src="@drawable/ic_indicator_flash_off" style="@style/MenuIndicator"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/menu_exposure_indicator" android:src="@drawable/ic_indicator_ev_0" style="@style/MenuIndicator"/>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/menu_location_indicator" android:src="@drawable/ic_indicator_loc_on" style="@style/MenuIndicator"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/menu_wb_indicator" android:src="@drawable/ic_indicator_wb_off" style="@style/MenuIndicator"/>
+</FrameLayout>

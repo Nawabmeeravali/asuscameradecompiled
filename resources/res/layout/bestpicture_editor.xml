@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p000v4.view.ViewPager android:layout_gravity="center" android:id="@+id/bestpicture_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:background="#b2191919" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/delete_best" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="25dp" android:src="@drawable/x" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/bestpicture_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/bestpicture_done"/>
+            <com.android.camera.p004ui.RotateImageView android:layout_gravity="center_vertical" android:id="@+id/best_more" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:background="#b2191919" android:layout_width="match_parent" android:layout_height="50dp">
+        <com.android.camera.p004ui.DotsView android:id="@+id/dots_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

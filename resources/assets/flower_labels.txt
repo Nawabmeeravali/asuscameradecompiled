@@ -1,0 +1,7 @@
+flower_orange
+potplant
+flower_blue
+flower_purple
+flower_red
+flower_yellow
+flower_others

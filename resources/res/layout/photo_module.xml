@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/count_down_to_capture"/>
+    <include layout="@layout/selfie_flash_view"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/preview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/mdp_preview_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View android:id="@+id/preview_cover" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/linear" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:orientation="vertical" android:id="@+id/progress" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="14dp" android:layout_marginRight="30dp" android:layout_marginBottom="14dp" style="?android:attr/progressBarStyleHorizontal"/>
+        <com.android.camera.GraphView android:id="@+id/graph_view" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginLeft="90dp" android:layout_marginTop="60dp"/>
+        <com.android.camera.DrawAutoHDR android:id="@+id/autohdr_view" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginLeft="15dp" android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+    <com.android.camera.p004ui.RotateImageView android:id="@+id/review_image" android:background="@android:color/black" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <View android:id="@+id/flash_overlay" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewStub android:id="@+id/face_view_stub" android:visibility="gone" android:layout="@layout/face_view" android:inflatedId="@+id/face_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.android.camera.p004ui.RenderOverlay android:id="@+id/render_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_gravity="center" layout="@layout/camera_controls" style="@style/CameraControls"/>
+    <include android:layout_gravity="center" layout="@layout/menu_help" style="@style/CameraControls"/>
+    <RelativeLayout android:id="@+id/id_tsmakeup_level_layout_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <SeekBar android:orientation="horizontal" android:id="@+id/blur_degree_bar" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="180dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/beautify_progressbar_style" android:minHeight="1dp" android:thumb="@drawable/ic_beautify_oval"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/bokeh_tip_text" android:background="#3f000000" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="130dp"/>
+    </FrameLayout>
+</merge>

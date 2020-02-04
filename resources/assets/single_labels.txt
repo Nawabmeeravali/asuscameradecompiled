@@ -1,0 +1,16 @@
+ocean
+document
+cat
+dog
+flower
+food
+greenland
+sky
+plant
+snow
+stage
+sunset
+ox
+ganesha
+elephant
+others

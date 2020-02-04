@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/CustomSettingRow">
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/setting_item_icon_width" android:layout_height="@dimen/setting_item_icon_width" android:layout_marginRight="@dimen/setting_item_list_margin" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/text" android:shadowColor="@android:color/transparent" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2" android:layout_toRightOf="@+id/image" style="@style/CustomSettingItemTitle"/>
+</com.android.camera.p004ui.CheckedLinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="count_down_title_margin_top">90dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.RotateLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="@dimen/filter_mode_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/filter_mode_width" android:layout_height="@dimen/filter_mode_height">
+        <ImageView android:layout_gravity="center" android:id="@+id/image" android:padding="2dp" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@android:color/black" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2"/>
+    </LinearLayout>
+</com.android.camera.p004ui.RotateLayout>

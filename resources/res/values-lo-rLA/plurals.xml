@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selection">
+        <item quantity="one">ລຶບລາຍການທີ່ເລືອກ?</item>
+        <item quantity="other">ລຶບລາຍການທີ່ເລືອກບໍ່?</item>
+    </plurals>
+    <plurals name="number_of_albums_selected">
+        <item quantity="zero">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="one">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="other">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+    </plurals>
+    <plurals name="number_of_groups_selected">
+        <item quantity="zero">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="one">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="other">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+    </plurals>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="one">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+        <item quantity="other">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+    </plurals>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">1 ວິນາທີ</item>
+        <item quantity="other">%d ວິນາທີ</item>
+    </plurals>
+</resources>

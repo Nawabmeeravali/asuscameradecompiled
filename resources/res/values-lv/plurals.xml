@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selection">
+        <item quantity="one">Vai dzēst atlasīto vienumu?</item>
+        <item quantity="other">Vai dzēst atlasītos vienumus?</item>
+    </plurals>
+    <plurals name="number_of_albums_selected">
+        <item quantity="zero">Atlasīti: %1$d</item>
+        <item quantity="one">Atlasīti: %1$d</item>
+        <item quantity="other">Atlasīti: %1$d</item>
+    </plurals>
+    <plurals name="number_of_groups_selected">
+        <item quantity="zero">Atlasītas: %1$d</item>
+        <item quantity="one">Atlasītas: %1$d</item>
+        <item quantity="other">Atlasītas: %1$d</item>
+    </plurals>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">Atlasīti: %1$d</item>
+        <item quantity="one">Atlasīti: %1$d</item>
+        <item quantity="other">Atlasīti: %1$d</item>
+    </plurals>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">1 sekunde</item>
+        <item quantity="other">%d sekundes</item>
+    </plurals>
+</resources>

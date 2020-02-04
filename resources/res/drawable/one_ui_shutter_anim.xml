@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/shutter_button_pressed" android:oneshot="true">
+    <item android:duration="16" android:drawable="@drawable/shutter_button_0_new"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_6"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_5"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_4"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_3"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_2"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_1"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_2"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_3"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_4"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_5"/>
+    <item android:duration="16" android:drawable="@drawable/one_ui_shutter_6"/>
+    <item android:duration="16" android:drawable="@drawable/shutter_button_0_new"/>
+</animation-list>

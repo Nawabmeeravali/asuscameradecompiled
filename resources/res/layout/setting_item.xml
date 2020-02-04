@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/SettingRow">
+    <TextView android:id="@+id/text" style="@style/SettingItemTitle"/>
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/setting_item_icon_width" android:layout_height="@dimen/setting_item_icon_width" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+</com.android.camera.p004ui.CheckedLinearLayout>

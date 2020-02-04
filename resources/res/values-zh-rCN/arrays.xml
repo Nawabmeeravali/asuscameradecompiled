@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_camera2_timer_entries">
+        <item>关闭</item>
+        <item>2秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+    </array>
+    <array name="pref_camera_cds_entries">
+        <item>@string/pref_camera_cds_entry_off</item>
+        <item>@string/pref_camera_cds_entry_on</item>
+        <item>@string/pref_camera_cds_entry_auto</item>
+    </array>
+    <array name="pref_camera_tnr_entries">
+        <item>@string/pref_camera_tnr_entry_disable</item>
+        <item>@string/pref_camera_tnr_entry_enable</item>
+    </array>
+    <array name="pref_camera_video_cds_entries">
+        <item>@string/pref_camera_video_cds_entry_off</item>
+        <item>@string/pref_camera_video_cds_entry_on</item>
+        <item>@string/pref_camera_video_cds_entry_auto</item>
+    </array>
+    <array name="pref_camera_video_tnr_entries">
+        <item>@string/pref_camera_video_tnr_entry_disable</item>
+        <item>@string/pref_camera_video_tnr_entry_enable</item>
+    </array>
+</resources>

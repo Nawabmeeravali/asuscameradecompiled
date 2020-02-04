@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/id_makeup_single_level_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <SeekBar android:id="@+id/seekbar_makeup_level" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/tsmakeup_mode_level_size">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/id_layout_makeup_back" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <ImageView android:layout_gravity="center" android:id="@+id/id_iv_makeup_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ts_makeup_back"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <View android:layout_gravity="center" android:background="@drawable/ic_ts_makeup_vline" android:layout_width="1dp" android:layout_height="36dp"/>
+        </LinearLayout>
+        <com.android.camera.p004ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3.5">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/id_layout_makeup_clean" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/id_iv_makeup_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ts_makeup_clean_selector"/>
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pref_camera_tsmakeup_level_clean" android:singleLine="true" android:shadowColor="@android:color/black" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2"/>
+            </LinearLayout>
+        </com.android.camera.p004ui.RotateLayout>
+        <com.android.camera.p004ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3.5">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/id_layout_makeup_whiten" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/id_iv_makeup_whiten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ts_makeup_whiten_selector"/>
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pref_camera_tsmakeup_level_whiten" android:singleLine="true" android:shadowColor="@android:color/black" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2"/>
+            </LinearLayout>
+        </com.android.camera.p004ui.RotateLayout>
+    </LinearLayout>
+</LinearLayout>

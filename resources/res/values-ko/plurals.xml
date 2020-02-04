@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selection">
+        <item quantity="one">선택한 항목을 삭제하시겠습니까?</item>
+        <item quantity="other">선택한 항목을 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="number_of_albums_selected">
+        <item quantity="zero">%1$d개 선택됨</item>
+        <item quantity="one">%1$d개 선택됨</item>
+        <item quantity="other">%1$d개 선택됨</item>
+    </plurals>
+    <plurals name="number_of_groups_selected">
+        <item quantity="zero">%1$d개 선택됨</item>
+        <item quantity="one">%1$d개 선택됨</item>
+        <item quantity="other">%1$d개 선택됨</item>
+    </plurals>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d개 선택됨</item>
+        <item quantity="one">%1$d개 선택됨</item>
+        <item quantity="other">%1$d개 선택됨</item>
+    </plurals>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">1초</item>
+        <item quantity="other">%d초</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/mode_layout_rect" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp">
+        <ImageView android:id="@+id/scene_mode_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/scene_mode_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/scene_mode_icon"/>
+    </LinearLayout>
+    <TextView android:textColor="@android:color/black" android:id="@+id/scene_mode_instructional" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:layout_below="@+id/title"/>
+    <CheckBox android:textColor="@android:color/black" android:id="@+id/remember_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="15dp" android:text="@string/pref_camera2_not_show_again" android:layout_below="@+id/scene_mode_instructional"/>
+    <View android:id="@+id/separator" android:background="#c0c0c0" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_below="@+id/remember_selected"/>
+    <Button android:textColor="@android:color/black" android:id="@+id/scene_mode_instructional_ok" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:text="@string/pref_camera2_scene_mode_instructional_ok" android:layout_below="@+id/separator" android:layout_alignParentRight="true"/>
+</RelativeLayout>

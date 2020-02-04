@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="capture_top_margin">0dp</dimen>
+    <dimen name="count_down_title_margin_top">20dp</dimen>
+    <dimen name="manage_cache_bottom_height">39dp</dimen>
+</resources>

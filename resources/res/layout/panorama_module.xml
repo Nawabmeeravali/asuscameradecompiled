@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/pano_module_capture"/>
+    <View android:id="@+id/preview_cover" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.android.camera.p004ui.RotateLayout android:layout_gravity="center" android:id="@+id/waitingDialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/pano_progress_empty" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" style="@android:attr/progressBarStyle"/>
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pano_dialog_prepare_preview"/>
+        </LinearLayout>
+    </com.android.camera.p004ui.RotateLayout>
+    <include layout="@layout/pano_module_review"/>
+    <com.android.camera.p004ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/pano_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/popup_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/pano_dialog_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@+id/pano_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:minHeight="64dp" android:text="@string/pano_dialog_title" style="@style/TextAppearance.DialogWindowTitle"/>
+                <View style="@style/PopupTitleSeparator"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/popup_background" android:padding="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/pano_dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pano_dialog_panorama_failed" style="@style/TextAppearance.Medium"/>
+            </LinearLayout>
+            <ImageView android:background="@drawable/list_divider" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pano_dialog_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+                <Button android:textSize="14sp" android:gravity="center" android:id="@+id/pano_dialog_button1" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/dialog_ok" android:maxLines="1" android:layout_weight="1" style="@style/Widget.Button.Borderless"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.camera.p004ui.RotateLayout>
+    <include android:layout_gravity="center" layout="@layout/camera_controls" style="@style/CameraControls"/>
+</merge>

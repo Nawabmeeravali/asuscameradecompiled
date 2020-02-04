@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.p004ui.ListSubMenu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/list_border" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:divider="@color/list_divider_color" android:dividerHeight="1dp" android:alpha="0.85"/>

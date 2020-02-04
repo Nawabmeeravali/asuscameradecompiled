@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/pro_mode_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/exposure_rotate_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/exposure_value" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableTop="@drawable/promode_exposure" android:layout_weight="1"/>
+    </com.android.camera.p004ui.RotateLayout>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/manual_rotate_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/manual_value" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableTop="@drawable/promode_manual" android:layout_weight="1"/>
+    </com.android.camera.p004ui.RotateLayout>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/white_balance_rotate_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/white_balance_value" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableTop="@drawable/promode_white_balance" android:layout_weight="1"/>
+    </com.android.camera.p004ui.RotateLayout>
+    <com.android.camera.p004ui.RotateLayout android:id="@+id/iso_rotate_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/iso_value" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableTop="@drawable/promode_iso" android:layout_weight="1"/>
+    </com.android.camera.p004ui.RotateLayout>
+</LinearLayout>
